@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cards</title>
+    <style>
+        body {
+            background-color: rgb(251, 251, 251);
+        }
+
+        #box-1 {
+            border: 2px solid #000000;
+            background-color: rgb(247, 227, 200);
+            border-radius: 15px;
+            margin: 15vh auto;
+            height: 60vh;
+            width: 25vw;
+            box-shadow: 1px 1px 2px 1px black;
+        }
+
+        #box-1>img {
+            width: 90%;
+            height: 50%;
+            /* border:1px solid black; */
+            padding: 5px;
+            margin: 3%;
+            box-shadow: 0px 5px 2px black;
+        }
+
+        #box-1 .title {
+            /* border:2px solid black; */
+            margin: 4%;
+        }
+
+        #box-1 .font {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.5em;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        #box-1 .description {
+            /* border: 2px solid black; */
+            background-color: white;
+            border-radius: 20px;
+            height: 24%;
+            margin: 8px;
+        }
+
+        #box-1:hover {
+            height: 62vh;
+            box-shadow: 2px 2px 2px 1px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box-1">
+        <img src="image.jpg" alt="Natures image">
+        <h4 class="title font">Nature beauty</h4>
+        <article class="description font">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Adipisci, optio?
+        </article>
+    </div>
+</body>
+
+</html>
+
