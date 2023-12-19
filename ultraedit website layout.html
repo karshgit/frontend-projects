@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar design</title>
+    <style>
+
+        :root{
+            --btn-color-1:rgb(5, 255, 255);
+            --btn-color-2: lightgreen;
+        }
+        #container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #container #logo img {
+            /* border:2px solid black; */
+            height: 100px;
+            width: 250px;
+            margin: 10px 0px 0px 25px;
+        }
+
+        #container ul {
+            display: flex;
+            list-style-type: none;
+            /* border:2px solid red; */
+            width: 500px;
+            justify-content: space-around;
+            align-items: center;
+            margin-right: 25px;
+        }
+
+
+        #container ul li {
+            /* border:2px solid black; */
+            height: 40px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container ul a {
+            text-decoration: none;
+            color: grey;
+            font-size: large;
+        }
+
+        #container ul a:hover {
+            color: rgb(77, 77, 77);
+            cursor: pointer;
+        }
+
+        #Hero-section {
+            /* border:2px solid black; */
+            height: 55Vh;
+            Display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #Hero-section #Line-1 {
+            /* border:2px solid black; */
+            width: 70%;
+            text-align: center;
+            font-weight: 500;
+            font-size: 3em;
+            padding: 5px;
+        }
+
+        #Hero-section .Line-2,
+        #container-2 .Line-2 {
+            /* Border:2px solid black; */
+            width: 75%;
+            font-size: 1.7em;
+            text-align: center;
+        }
+
+        .btn-background {
+            /* border:2px solid #000000; */
+            background-color:var(--btn-color-1);
+            border-radius: 10px;
+            height: 10%;
+            width: 300px;
+            padding: 10px;
+            transition-duration: 1s;
+        }
+
+        .btn-background:hover{
+            background-color: rgb(0, 189, 189);
+            cursor: pointer;
+        }
+
+        .Btn-font {
+            color: white;
+            font-weight: bolder;
+        }
+
+        #container-2 #download-section {
+            /* border:2px solid black; */
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            gap: 10px;
+
+        }
+
+        #container-2 .box {
+            /* border:2px solid blue; */
+            height: 10em;
+            width: 85%;
+            padding: 10px;
+            background-color: rgb(236, 235, 235);
+            padding: 10px;
+            justify-self: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #container-2 .box .language {
+            font-size: 25px;
+            /* border:2px solid black; */
+            margin: 0px;
+        }
+
+        #container-2 .box .translation {
+            font-size: 15px;
+            font-weight: 100;
+            /* border:2px solid black; */
+            margin: 0px;
+        }
+
+        #container-2 .box .btn {
+            /* border:2px solid black; */
+            margin-top: 35px;
+            width: 300px;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+        }
+
+        #container-2 .btn-1 {
+            margin: 5px;
+            height: 40px;
+            background-color: var(--btn-color-1);
+            border-radius: 5px;
+            border: none;
+            transition: 1s;
+
+        }
+
+        #container-2 .btn-1:hover {
+            background-color: rgb(1, 173, 173);
+        }
+
+        #container-2 .btn-2{
+            margin: 5px;
+            height: 40px;
+            background-color: var(--btn-color-2);
+            border-radius: 5px;
+            border: none;
+            transition: 1s;
+        }
+
+        #container-2 .btn-2:hover {
+            background-color: rgb(109, 251, 109);
+        }
+
+
+        @media (min-width:200px) and (max-width:800px) {
+            #container ul li {
+                display: none;
+            }
+
+            #container #menu-option {
+                /* border:2px solid black; */
+                height: 25px;
+                width: 45px;
+                margin: 30px;
+            }
+
+            #container #menu-option .line {
+                border: 1px solid blue;
+                width: 30px;
+                margin: 4px;
+            }
+            #container-2{
+                margin-top:200px;
+            }
+            #container-2 #download-section{
+                display:grid;
+                grid-template-columns:1fr;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="container">
+        <div id="logo">
+            <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_Logo.png" alt="logo-image">
+        </div>
+        <div id="menu-option">
+            <div class="line" id="L-1"></div>
+            <div class="line" id="L-2"></div>
+            <div class="line" id="L-3"></div>
+
+            <ul>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+    </nav>
+    <main>
+
+
+        <section id="Hero-section">
+            <p id="Line-1">Download <b>UltraEdit</b> for window
+                <img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="logo-img">
+            </p>
+
+            <p class="Line-2">Download and try UltraEdit before you buy it!This download includes the full Windows
+                version of
+                the text editor</p>
+
+            <button Class="btn-background Btn-font">
+                DOWNLOAD MAC OR LINUX VERSION
+            </button>
+        </section>
+
+        <section>
+            <div id=container-2>
+                <p class="Line-2">Download ultraEdit</p>
+                <div id="download-section">
+                    <div class="box">
+                        <P class="language">English</P>
+                        <div class="btn">
+                            <button class="btn-1">download 32-bit</button>
+                            <button class="btn-2">download 64-bit</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <p class="language">Deutch</p>
+                        <p class="translation">german</p>
+                        <div class="btn">
+                            <button class="btn-1">download 32-bit</button>
+                            <button class="btn-2">download 64-bit</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <p class="language">Italiano</p>
+                        <p class="translation">Italian</p>
+                        <div class="btn">
+                            <button class="btn-1">download 32-bit</button>
+                            <button class="btn-2">download 64-bit</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <p class="language">Espanol</p>
+                        <p class="translation">Spanish</p>
+                        <div class="btn">
+                            <button class="btn-1">download 32-bit</button>
+                            <button class="btn-2">download 64-bit</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <P class="language">francais</P>
+                        <p class="translation">french</p>
+                        <div class="btn">
+                            <button class="btn-1">download 32-bit</button>
+                            <button class="btn-2">download 64-bit</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <p class="language">Portugues brasileiro</p>
+                        <p class="translation">Brazillian portuguese</p>
+                        <div class="btn">
+                            <button class="btn-1">download 32-bit</button>
+                            <button class="btn-2">download 64-bit</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <p class="language">日本</p>
+                        <p class="translation">japnese</p>
+                        <div class="btn">
+                            <button class="btn-1">download 32-bit</button>
+                            <button class="btn-2">download 64-bit</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <p class="language">한국어</p>
+                        <p class="translation">korean</p>
+                        <div class="btn">
+                            <button class="btn-1">download 32-bit</button>
+                            <button class="btn-2">download 64-bit</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <p class="language">中国</p>
+                        <p class="translation">chinese</p>
+                        <div class="btn">
+                            <button class="btn-1">download 32-bit</button>
+                            <button class="btn-2">download 64-bit</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <p class="language">中國</p>
+                        <p class="translation">traditional chinese</p>
+                        <div class="btn">
+                            <button class="btn-1">download 32-bit</button>
+                            <button class="btn-2">download 64-bit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+
